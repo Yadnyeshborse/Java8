@@ -25,5 +25,7 @@ public class CreateStreaamObject {
         String arr[]={"1","2","3","4","5"};
         Stream<String> a= Arrays.stream(arr);
         a.forEach(System.out::println);
+
+        System.out.println("_________________________________________________");
     }
 }
