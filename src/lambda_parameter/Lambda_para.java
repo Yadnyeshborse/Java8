@@ -29,6 +29,6 @@ public class Lambda_para {
         };
         int result2=som.addition(1,9);
         System.out.println("Second way of writing"+" "+ result2);
-        System.out.println("End");
+        System.out.println("End zal");
     }
 }
