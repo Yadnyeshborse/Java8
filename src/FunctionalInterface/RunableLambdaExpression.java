@@ -4,7 +4,7 @@ class ThreadDemo implements Runnable{
 
     @Override
     public void run() {
-        System.out.println("Runnable by traditional ways");
+        System.out.println("Runnable_example by traditional ways");
     }
 }
 
