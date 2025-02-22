@@ -34,7 +34,7 @@ class Triangle implements Shape{
 
 
 
-///abobe appproach is by traditinal way where we create interface and implemet it .It creates big code
+///above appproach is by traditinal way where we create interface and implemet it .It creates big code
 public class First_lambda_expresstion_Traditional_approach_VS_Lambda_Expresstion {
     public static void main(String[] args) {
 
