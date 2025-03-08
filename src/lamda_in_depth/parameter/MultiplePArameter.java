@@ -10,6 +10,8 @@ public class MultiplePArameter {
     }
     public static void main(String[] args) {
         operation((int a,int b)->System.out.println(a+b),10,20);
+        Fun fun=(int a,int b)->{System.out.println(a+b);};
+        fun.run(2,4);
 
     }
 }
