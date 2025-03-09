@@ -15,7 +15,7 @@ public class StreamSorting {
         List<String> result=fruits.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
         //System.out.println(result);
 
-        //shorttcut
+        //shortcut
         List<String> res=fruits.stream().sorted((obj1,obj2)->obj1.compareTo(obj2)).collect(Collectors.toList());
         System.out.println(res);
 
