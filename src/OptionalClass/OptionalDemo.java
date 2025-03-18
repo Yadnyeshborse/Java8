@@ -13,19 +13,19 @@ public class OptionalDemo {
         //Optional.empty() is a static method that returns an empty Optional instance, meaning it contains no value.
         //An Optional is a container object which may or may not contain a non-null value. When you call Optional.empty(), you're explicitly creating an Optional that is empty, i.e., there is no value inside it.
         Optional<Object> emptyOpional=Optional.empty();
-        //System.out.println(emptyOpional);
+        //System.out.println("Empty method="+emptyOpional);
 
         //of checks of email is empty of now
         //Optional<String> emailoptional=Optional.of(email);
-       // System.out.println(emailoptional);
+       // System.out.println("Of"+emailoptional);
 
         //ofNullable
         Optional<String> stringNullable=Optional.ofNullable(email);
-        System.out.println(stringNullable);
+        System.out.println("24 output="+stringNullable);
 
 
 
-        //if we want to to have just value istead of Optional[As@gmail.com] we use get method
+        //if we want to have just value instead of Optional[As@gmail.com] we use get method
         //System.out.println(stringNullable.get);
 
         //ofNullable is safest way beacasue it handel null and not null value also
