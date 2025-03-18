@@ -16,5 +16,8 @@ public class ForeachMethod {
         strea.sorted(Comparator.reverseOrder())
                 .flatMap(i->Stream.of(i.charAt(1)))
                 .forEach(System.out::println);
+
+        //---------------------------------
+
     }
 }
