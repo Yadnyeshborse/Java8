@@ -14,5 +14,8 @@ public class Sort_Arraylist {
 
         Collections.sort(list,(a,b)->(a>b)?-1:(a<b)?1:0);
         System.out.println("AfterSorting"+list);
+
+        list.sort((o1,o2)->o1.compareTo(o2));
+        System.out.println("Easy way"+list);
     }
 }

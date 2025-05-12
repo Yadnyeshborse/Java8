@@ -12,7 +12,7 @@ import java.util.function.Function;
 //}
 public class FunctionDemo {
     public static void main(String[] args) {
-        //Traditiona; approach
+        //Traditional approach
 //        Function<String, Integer> fun=new FuncyionImp();
 //        System.out.println(fun.apply("Manav"));
 

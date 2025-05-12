@@ -34,7 +34,7 @@ class Triangle implements Shape{
 
 
 
-///abobe appproach is by traditinal way where we create interface and implemet it .It creates big code
+///above approach is by traditinal way where we create interface and implemet it .It creates big code
 public class First_lambda_expresstion_Traditional_approach_VS_Lambda_Expresstion {
     public static void main(String[] args) {
 
@@ -52,10 +52,10 @@ public class First_lambda_expresstion_Traditional_approach_VS_Lambda_Expresstion
        // print(reactangle);
        // print(traingle);
 
-        //passing lambda expresstiion as parameter in method
-        print(()->System.out.println("Square class DraW Method"));
-        print(()->System.out.println("Reactangle Class Draw Method"));
-        print(()->System.out.println("Traingle Class Draw Method"));
+        //passing lambda expression as parameter in method
+        print(()->System.out.println("Square class Draw Method"));
+        print(()->System.out.println("Rectangle Class Draw Method"));
+        print(()->System.out.println("Triangle Class Draw Method"));
     }
 
     //here we are passing paramter
