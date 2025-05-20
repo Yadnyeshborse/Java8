@@ -22,7 +22,6 @@ public class ConvertListToMap {
     public String getValue() {
         return value;
     }
-
     public static void main(String[] args) {
         List<ConvertListToMap> list=new ArrayList<>();
         list.add(new ConvertListToMap(1,"I"));

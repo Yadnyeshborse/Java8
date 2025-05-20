@@ -25,7 +25,7 @@ class Data {
     }
 }
 
-public class Comparator_Method {
+public class Comparator_Method_Part2 {
     public static void main(String[] args) {
         ArrayList<Data> m = new ArrayList<>();
         m.add(new Data("Force Awakens", 8.3, 2015));
@@ -35,7 +35,7 @@ public class Comparator_Method {
         // Sorting using a Comparator instance
         //Collections.sort(m, new RatingComparator());
 
-        //sort by tear and rating both
+        //sort by year and rating both
         Collections.sort(m,new SortByRatingByYear());
 
         // Printing sorted data
@@ -45,7 +45,7 @@ public class Comparator_Method {
     }
 }
 
-// Separate Comparator class
+// we need Separate Comparator class as compare to comparable where we don't
 class RatingComparator implements Comparator<Data> {
     @Override
     public int compare(Data o1, Data o2) {

@@ -32,7 +32,7 @@ public class SortTripletByLambda {
         };
 
         // Sort by x (ascending order)
-        Arrays.sort(triplets, Comparator.comparing(Tripleto::getX));
+        Arrays.sort(triplets, Comparator.comparing(tripleto -> tripleto.getX()));
         System.out.println("Sorted by x (ascending):");
         printTriplets(triplets);
 

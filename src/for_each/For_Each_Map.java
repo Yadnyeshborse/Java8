@@ -17,6 +17,7 @@ public class For_Each_Map {
             System.out.println(I.getValue().getName());
 
         }
+        System.out.println("_____________________");
 
         map.forEach((k,v)->{
             System.out.println(k);

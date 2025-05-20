@@ -5,6 +5,8 @@ import java.util.List;
 
 public class For_Each_Demo {
     public static void main(String[] args) {
+        //for each return type is void
+        //collect has return type
         List<Person> list=new ArrayList<Person>();
         list.add(new Person("Raj",67));
         list.add(new Person("Tau",90));

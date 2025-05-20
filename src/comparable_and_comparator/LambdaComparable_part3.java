@@ -28,7 +28,7 @@ class Student {
     }
 }
 
-public class LambdaComparable  {
+public class LambdaComparable_part3 {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student("Alice", 22));
@@ -36,9 +36,10 @@ public class LambdaComparable  {
         students.add(new Student("Alice", 19));
         students.add(new Student("Charlie", 21));
 
-        // Sort by name, then by age using lambda expressions
+         //Sort by name, then by age using lambda expressions
         students.sort(Comparator.comparing((Student s) -> s.getName())
                 .thenComparing((Student s) -> s.getAge()));
+
 
         // Print sorted students
         System.out.println("Students sorted by name, then by age:");
