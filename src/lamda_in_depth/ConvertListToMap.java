@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ConvertListToMap {
     private Integer key;
@@ -21,7 +22,6 @@ public class ConvertListToMap {
     public String getValue() {
         return value;
     }
-
     public static void main(String[] args) {
         List<ConvertListToMap> list=new ArrayList<>();
         list.add(new ConvertListToMap(1,"I"));
@@ -31,6 +31,10 @@ public class ConvertListToMap {
         Map<Integer,String> map=new HashMap<>();
         list.forEach(item->map.put(item.getKey(), item.value));
         System.out.println(map);
+
+        //or
+        Map<Integer,String> map1=list.stream().collect(Collectors.toMap(((i)->i.getKey()),j->j.getValue()));
+        System.out.println(map1);
 
 
     }

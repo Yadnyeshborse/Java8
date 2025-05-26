@@ -3,7 +3,7 @@ package comparable_and_comparator;
 import java.util.Collections;
 import java.util.LinkedList;
 
-class Lok implements Comparable<Lok> { // ✅ Changed class name from Student to Lok
+class Lok implements Comparable<Lok> { //  Changed class name from Student to Lok
     String Name;
     int Id;
     int Rank;
@@ -18,9 +18,12 @@ class Lok implements Comparable<Lok> { // ✅ Changed class name from Student to
         Rank = rank;
     }
 
+
     @Override
     public int compareTo(Lok o) {
-        return Integer.compare(this.Rank, o.Rank);
+        return Integer.compare(this.Rank,o.Rank);
+        //above example os of Integer but if it is string then below approach
+        //return this.name.compareTo(other.name);
     }
 }
 

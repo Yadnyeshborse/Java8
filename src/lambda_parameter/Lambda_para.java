@@ -14,8 +14,8 @@ class addtion implements Addable{
 public class Lambda_para {
     public static void main(String[] args) {
 
-//  First Way: Using a single-line lambda expression without specifying types for parameters
-// First way: Single-line lambda expression (concise)
+//        First Way: Using a single-line lambda expression without specifying types for parameters
+//        First way: Single-line lambda expression (concise)
 //        Addable sum=(a,b)-> (a+b);
 //        int result=sum.addition(2,4);
 //        System.out.println(result);
