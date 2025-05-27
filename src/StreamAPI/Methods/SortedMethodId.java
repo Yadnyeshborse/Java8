@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class SortedMethid {
+public class SortedMethodId {
     public static void main(String[] args) {
         List<Integer> list= Arrays.asList(5, -10, 7, -18, 23);
         list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
@@ -18,7 +18,7 @@ public class SortedMethid {
         Stream.of(array).sorted((str1, str2)
                         -> Character.compare(str1
                                 .charAt(str1.length() - 1),
-                        str2.charAt(str2.length() - 1)))
+                              str2.charAt(str2.length() - 1)))
                 .         forEach(System.out::println);
     }
 }

@@ -8,7 +8,7 @@ public class Joining_WIth_Non_String_value {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
 
         String result = numbers.stream()
-                .map(Object::toString) // Convert integers to strings
+                .map(integer -> integer.toString()) // Convert integers to strings
                 .collect(Collectors.joining(", "));
 
         System.out.println(result);

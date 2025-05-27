@@ -12,7 +12,7 @@ public class CombineStreamsBuilder {
         Stream<String> stream2 = Stream.of("X", "Y", "Z");
 
         // Add elements from stream1
-        stream1.forEach(builder::add);
+        stream1.forEach(t -> builder.add(t));
 
         // Add elements from stream2
         stream2.forEach(builder::add);

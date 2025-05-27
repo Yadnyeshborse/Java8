@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
-public class Merge_twolist_intoMap {
+public class Merge_twoList_intoMap {
     public static void main(String[] args) {
         List<String> list= Arrays.asList("Rahul","Manish","Kety");
         List<Integer> list1=Arrays.asList(23,65,21);
