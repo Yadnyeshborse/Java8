@@ -7,9 +7,11 @@ import java.util.stream.Stream;
 public class By_Atomic_Integer {
     public static void main(String[] args) {
         // Input array
-        String[] array = new String[]{"stream", "is", "a",
+        String[] array = {"stream", "is", "a",
                 "sequence", "of", "elements",
                 "like", "list"};
+
+        //
 
         // Use AtomicInteger to track the index
         AtomicInteger index = new AtomicInteger(0);

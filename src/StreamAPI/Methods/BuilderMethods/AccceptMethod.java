@@ -14,6 +14,7 @@ public class AccceptMethod {
 
         //__________________________________
         // Create a Stream.Builder
+        System.out.println("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
         Stream.Builder<String> builder = Stream.builder();
 
         // Add multiple elements to the builder
@@ -27,6 +28,7 @@ public class AccceptMethod {
 
         // Process the stream
         stream.forEach(System.out::println);
+        System.out.println("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
         //__________________________________________________
 
         Stream.Builder<String> str_b = Stream.builder();

@@ -9,8 +9,7 @@ public class Example1 {
         List<Integer> arr = List.of(1, 2, 3, 4, 5, 6, 7);
         List<Integer> even
                 = arr.stream().reduce(new ArrayList<Integer>(),
-                (a, b)
-                        -> {
+                (a, b) -> {
                     if (b % 2 == 0)
                         a.add(b);
                     return a;
