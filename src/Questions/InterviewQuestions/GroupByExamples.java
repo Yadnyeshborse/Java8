@@ -53,7 +53,7 @@ public class GroupByExamples {
         // 2. Count of Employees Per Department
         System.out.println("\n2. Count of Employees Per Department:");
         Map<String, Long> countByDept = employees.stream()
-                .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
+                .collect(Collectors.groupingBy(employee1 -> employee1.getDepartment(), Collectors.counting()));
         countByDept.forEach((dept, count) -> System.out.println(dept + " -> " + count));
 
         // 3. Average Salary Per Department
@@ -68,10 +68,12 @@ public class GroupByExamples {
                 collect(Collectors.groupingBy(i->i.getDepartment(),Collectors.mapping(o->o.getName(),Collectors.toList())));
         mal.forEach((department,name)->System.out.println(department+"->"+name));
 
-        //eomplye departwise higjest salery
+        //employee department the highest salary
         System.out.println("________");
         System.out.println("Higest slary");
-        Map<String,Optional<Employee>> map=employees.stream().collect(Collectors.groupingBy((i)->i.getDepartment(),Collectors.maxBy(Comparator.comparing(o->o.getSalary()))));
+        Map<String,Optional<Employee>> map=employees
+                .stream()
+                .collect(Collectors.groupingBy((i)->i.getDepartment(),Collectors.maxBy(Comparator.comparing(o->o.getSalary()))));
         map.forEach((department,salary)->System.out.println(department+"->"+salary));
 
     }
