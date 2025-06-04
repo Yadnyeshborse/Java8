@@ -37,7 +37,7 @@ public class SortTripletByLambda {
         printTriplets(triplets);
 
         // Sort by y (descending order)
-        Arrays.sort(triplets, Comparator.comparing(Tripleto::getY).reversed());
+        Arrays.sort(triplets, Comparator.comparing((Tripleto tripleto) -> tripleto.getY()).reversed());
         System.out.println("\nSorted by y (descending):");
         printTriplets(triplets);
 

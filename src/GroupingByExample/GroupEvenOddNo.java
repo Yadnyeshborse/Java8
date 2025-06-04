@@ -11,5 +11,6 @@ public class GroupEvenOddNo {
 
         Map<String,List<Integer>> map=numbers.stream().collect(Collectors.groupingBy(n->n%2==0?"even":"odd"));
         System.out.println(map);
+
     }
 }

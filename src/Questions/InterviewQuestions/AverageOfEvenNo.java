@@ -6,6 +6,8 @@ public class AverageOfEvenNo {
     public static void main(String[] args) {
         //find average of even no
         List<Integer> list= Arrays.asList(2,4,6,1,3);
+
+
         OptionalDouble result=list.stream().filter(i->i%2==0).mapToInt(integer -> integer.intValue()).average();
         if(result.isPresent()){
             System.out.println(result.getAsDouble());
@@ -22,10 +24,11 @@ public class AverageOfEvenNo {
 
         List<List<Integer>> listp = new ArrayList<>();
         listp.add(Arrays.asList(9, 2));
-        listp.add(Arrays.asList(3, 4));
+        listp.add(Arrays.asList(4, 3));
         listp.add(Arrays.asList(5, 6));
         listp.add(Arrays.asList(7, 8));
         System.out.println(listp);
+
 
 
         //sort array of array
