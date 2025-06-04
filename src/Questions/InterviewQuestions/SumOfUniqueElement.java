@@ -7,5 +7,6 @@ public class SumOfUniqueElement {
         int[] arr={1,2,4,5,6,3,2,1,4,7,8};
         int res=Arrays.stream(arr).distinct().sum();
         System.out.println(res);
+        ///
     }
 }
