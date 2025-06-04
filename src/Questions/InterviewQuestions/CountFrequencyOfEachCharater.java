@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class CountFrequencyOdWachCharater {
+public class CountFrequencyOfEachCharater {
     public static void main(String[] args) {
         String input = "Hello, world!";
 
@@ -16,10 +16,14 @@ public class CountFrequencyOdWachCharater {
                         Function.identity(),
                         Collectors.counting()
                 ));
+//        input.chars() is a method that:
+//        Belongs to the String class.
+//        Returns an IntStream of Unicode values for each character in the string.
+        //It returns an IntStream — a stream of int values — not char or Character types.
 
         frequencyMap.forEach((ch, count) -> System.out.println("'" + ch + "': " + count));
 
-        ////
+        ////Make each starting character as uppercase
 
         String inputo = "hello world welcome to java";
 
@@ -28,6 +32,8 @@ public class CountFrequencyOdWachCharater {
                         Character.toUpperCase(word.charAt(0)) + word.substring(1))
                 .collect(Collectors.joining(" "));
 
-        System.out.println(capitalized);
+        System.out.println("Data"+capitalized);
+
+
     }
 }

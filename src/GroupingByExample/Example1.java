@@ -9,5 +9,7 @@ public class Example1 {
 
         Map<Character,List<String>> group=gurupByEl.stream().collect(Collectors.groupingBy((i)->i.charAt(0)));
         group.forEach((key,value)->System.out.println(key+"->"+value));
+
+
     }
 }

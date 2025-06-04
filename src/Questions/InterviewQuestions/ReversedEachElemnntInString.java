@@ -20,6 +20,7 @@ public class ReversedEachElemnntInString {
                 .map(s -> new StringBuilder(s).reverse().toString())
                 .collect(Collectors.toList());
 
+
         System.out.println(reversed); // Output: [elppa, ananab, egnaro]
 
         IntStream.rangeClosed(0,10).filter(i->i%2==0).forEach(i->System.out.println(i));
