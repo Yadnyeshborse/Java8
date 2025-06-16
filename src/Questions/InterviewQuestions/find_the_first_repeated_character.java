@@ -18,5 +18,6 @@ public class find_the_first_repeated_character {
                 map(p->p.getKey()).
                 findFirst().get();
         System.out.println(ma);
+        System.out.println(20/10);
     }
 }
