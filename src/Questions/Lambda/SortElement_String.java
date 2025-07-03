@@ -23,8 +23,6 @@ public class SortElement_String {
 //        list.sort(Comparator.naturalOrder());
 //        System.out.println(list);
 
-        //by stream
-        List<String> list1=list.stream().sorted().collect(Collectors.toList());
-        System.out.println(list1);
+
     }
 }

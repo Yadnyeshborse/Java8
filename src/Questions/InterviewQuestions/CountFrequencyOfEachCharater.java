@@ -21,6 +21,8 @@ public class CountFrequencyOfEachCharater {
 //        Returns an IntStream of Unicode values for each character in the string.
         //It returns an IntStream — a stream of int values — not char or Character types.
 
+        //first get int value of charater from i.chars() than convert that int value to charter by map(i->(char)i)
+
         frequencyMap.forEach((ch, count) -> System.out.println("'" + ch + "': " + count));
 
         ////Make each starting character as uppercase

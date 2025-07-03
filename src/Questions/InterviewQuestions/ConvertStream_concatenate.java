@@ -3,7 +3,7 @@ package Questions.InterviewQuestions;
 import java.util.Arrays;
 import java.util.List;
 
-public class ConvertStream_concanate {
+public class ConvertStream_concatenate {
     public static void main(String[] args) {
         //Convert a list of string to uppercase and then concatenate
         List<String> list= Arrays.asList("a","b","c");

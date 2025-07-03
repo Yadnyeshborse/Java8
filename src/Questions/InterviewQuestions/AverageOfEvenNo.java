@@ -13,7 +13,7 @@ public class AverageOfEvenNo {
             System.out.println(result.getAsDouble());
         }
         //We use .mapToInt(Integer::intValue) to convert a Stream<Integer> to an IntStream, which is necessary when you want to perform numeric operations like:
-        //
+        //object to primitive value
         //sum()
         //
         //average()

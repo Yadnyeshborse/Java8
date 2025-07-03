@@ -10,5 +10,7 @@ public class FilterEvenNo {
         Integer[] number={1,2,3,5,6,7,8,9,0};
         Stream<Integer> streamp=Arrays.stream(number);
         streamp.filter(o->o%2==0).forEach(System.out::println);
+
+        Arrays.stream(number).filter(i->i%2==0).forEach(System.out::println);
     }
 }

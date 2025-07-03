@@ -60,8 +60,7 @@ class Example {
                 "Regression" };
         System.out.println(
                 "Stream from Array, sort, filter and print : ");
-        Arrays
-                .stream(names) // same as Stream.of(names)
+        Arrays.stream(names) // same as Stream.of(names)
                 .filter(x -> x.startsWith("S"))
                 .sorted()
                 .forEach(System.out::println);

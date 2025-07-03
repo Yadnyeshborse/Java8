@@ -17,5 +17,7 @@ public class character_with_maximum_frequency {
                 .orElse(null);
 
         System.out.println("Character with max frequency: " + maxChar);
+
+
     }
 }

@@ -9,5 +9,7 @@ public class GetLogestStringWithoutFilter {
         List<String> list= Arrays.asList("GFG", "Geeks", "for", "GeeksQuiz", "GeeksforGeeks");
         Optional<String> result=list.stream().reduce((str1, str2)->str1.length()>str2.length()?str1:str2);
         System.out.println(result);
+
+
     }
 }
