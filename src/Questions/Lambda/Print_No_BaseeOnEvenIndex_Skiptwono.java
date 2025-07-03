@@ -12,9 +12,11 @@ public class Print_No_BaseeOnEvenIndex_Skiptwono {
                 .filter((u)->u%2==0)
                 .mapToObj(p->list[p]).skip(2).forEach(System.out::println);
 
-//        IntStream.rangeClosed(2, array.length-1).filter((str)->str%2==0)
-//                .mapToObj(x->array[x])
+//        IntStream.rangeClosed(2, list.length-1).filter((str)->str%2==0)
+//                .mapToObj(x->list[x])
 //                .forEach(System.out::println);
+
+
 
     }
 }

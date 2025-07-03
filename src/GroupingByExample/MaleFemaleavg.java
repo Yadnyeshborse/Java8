@@ -16,7 +16,7 @@ public class MaleFemaleavg {
         List<MaleFemale> list= Arrays.asList(m1,m2,m3,m4);
 
         Map<String, Double> avgByGender =list.stream()
-                .collect(Collectors.groupingBy(MaleFemale::getGender,Collectors.averagingInt(MaleFemale::getAge)));
+                .collect(Collectors.groupingBy(maleFemale -> maleFemale.getGender(),Collectors.averagingInt(MaleFemale::getAge)));
         System.out.println(avgByGender);
     }
 }
