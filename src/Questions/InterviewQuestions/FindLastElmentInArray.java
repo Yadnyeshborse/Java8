@@ -8,8 +8,7 @@ import java.util.Optional;
 public class FindLastElmentInArray {
     public static void main(String[] args) {
         List<Integer> list= Arrays.asList(2,4,6,1,3);
-        Integer result=list.stream().sorted(Comparator.reverseOrder()).findFirst().orElse(null);
-        System.out.println(result);
+
 
         //by reduce
         Optional<Integer> i =list.stream().reduce((first, second)->second);

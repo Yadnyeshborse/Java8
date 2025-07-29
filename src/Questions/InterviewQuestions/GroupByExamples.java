@@ -63,7 +63,7 @@ public class GroupByExamples {
         avgSalaryByDept.forEach((dept, avgSalary) -> System.out.println(dept + " -> " + avgSalary));
 
         //4.Employee names by departmentwise
-        System.out.println("Employee name departwise");
+        System.out.print("\n3.Employee name departwise");
         Map<String,List<String>> mal=employees.stream().
                 collect(Collectors.groupingBy(i->i.getDepartment(),Collectors.mapping(o->o.getName(),Collectors.toList())));
         mal.forEach((department,name)->System.out.println(department+"->"+name));
