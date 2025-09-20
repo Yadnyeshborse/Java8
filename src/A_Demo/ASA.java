@@ -9,11 +9,11 @@ import java.util.stream.Stream;
 
 public class ASA {
     public static void main(String[] args) {
+        IntStream.range(2,50).filter(num->isPrime(num)).forEach(System.out::println);
+}
 
+    private static boolean isPrime(int num) {
+        return  IntStream.rangeClosed(2,(int)Math.sqrt(num)).allMatch(nu->num%nu!=0);
 
-
-        String name="Hello Worlde LSHUDIO dsudsiudisiwud";
-        String resul=Arrays.stream(name.split(" ")).sorted(Comparator.comparing((String i)->i.length()).reversed()).skip(1).findFirst().get();
-        System.out.println(resul);
     }
 }
