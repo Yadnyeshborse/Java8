@@ -21,5 +21,7 @@ public class FlatmapExam {
 //        }
 
         list.stream().flatMap(i->i.stream()).forEach(System.out::println);
+        System.out.println("______");
+        list.stream().flatMap(i->i.stream()).forEach(System.out::println);
     }
 }

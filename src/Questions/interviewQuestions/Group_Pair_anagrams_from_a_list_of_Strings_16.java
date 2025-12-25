@@ -1,7 +1,8 @@
 package Questions.interviewQuestions;
 
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.stream.*;
+
 
 public class Group_Pair_anagrams_from_a_list_of_Strings_16 {
     public static void main(String[] args) {
