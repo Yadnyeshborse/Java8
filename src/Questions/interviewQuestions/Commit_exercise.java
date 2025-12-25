@@ -2,7 +2,8 @@ package Questions.interviewQuestions;
 
 public class Commit_exercise {
     public static void main(String[] args) {
-        p=30;
+        String name="Sau";
+
 
     }
 }
