@@ -13,7 +13,7 @@ public class character_with_maximum_frequency {
                 .entrySet()
                 .stream()
                 .max(Map.Entry.comparingByValue())
-                .map(Map.Entry::getKey)
+                .map(characterLongEntry -> characterLongEntry.getKey())
                 .orElse(null);
 
         System.out.println("Character with max frequency: " + maxChar);

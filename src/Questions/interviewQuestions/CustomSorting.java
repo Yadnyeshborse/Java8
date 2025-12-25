@@ -46,7 +46,7 @@ public class CustomSorting {
 
        //custom sorting
         List<Employee> employ = employees.stream()
-                .sorted(Comparator.comparing((Employee employee) -> employee.getSalary(),Comparator.reverseOrder())
+                .sorted(Comparator.comparing(Employee::getSalary,Comparator.reverseOrder())
                         .thenComparing(Employee::getName))
                 .toList();
 
