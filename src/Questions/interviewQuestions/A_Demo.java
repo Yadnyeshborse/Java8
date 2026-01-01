@@ -77,6 +77,8 @@
             );
             DoubleSummaryStatistics collect = list.stream().filter(i -> i.getId() > 5L).collect(Collectors.summarizingDouble(i -> i.getId()));
             System.out.println(collect.getAverage());
+            System.out.println(collect.getMax());
+            System.out.println(collect.getMin());
 
 
         }
